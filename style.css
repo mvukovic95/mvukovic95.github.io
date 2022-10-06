@@ -1,0 +1,23 @@
+body {
+    /* background */
+    background-color: rgb(37, 38, 39);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url('img/adrien-olichon-RCAhiGJsUUE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* typography */
+    color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .info {
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+}
