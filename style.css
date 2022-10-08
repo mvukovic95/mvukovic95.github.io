@@ -1,3 +1,10 @@
+body::before {
+    /* fixes the fixed navbar */
+    display: block;
+    content: '';
+    height: 60px;
+}
+
 body {
     /* background */
     background-color: rgb(37, 38, 39);
@@ -11,13 +18,37 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar {
+    background: transparent;
+}
+
 a {
     text-decoration: none;
+}
+
+i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.infobox {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width: 425px) {
+    .contact-icons {
+        width: 75% !important;
+    }
 }
 
 @media (max-width: 992px) {
     .info {
         padding: 20px 0 20px 0;
         text-align: center;
+    }
+    .navbar {
+        /* background-color: #000; */
+        /* fallback for script */
     }
 }
